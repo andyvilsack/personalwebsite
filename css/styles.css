@@ -53,9 +53,33 @@ body {margin:0;}
   font-family: 'Open Sans', sans-serif;
   padding-right: 20px;
   padding-left: 20px;
-
+}
+.columns
+{
 
 }
+.subcolumnleft
+{
+  display: block;
+  float: left;
+  position: relative;
+  width: 50%;
+  border-right: 5px solid;
+}
+.subcolumnright
+{
+  display: block;
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px)
+{
+
+}
+
+
 
 
 .topnav {
@@ -82,7 +106,7 @@ body {margin:0;}
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -90,7 +114,7 @@ body {margin:0;}
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
