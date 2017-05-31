@@ -21,11 +21,39 @@
 <div class="topnav" id="myTopnav">
   <a href="index.html">Home</a>
   <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
+  <a href="contact.php">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+<br>
+<div class="wrapperdiv">
+<p>Hello!  If you would like to contact me feel free to usitilize the form below, or you can email me directily at <a href="mailto:andrew.vilsack@gmail.com" target="_top">andrew.vilsack@gmail.com</a></p>
+<br>
 <div>
-  contact
+<form method="post" action="request.php"  name="requestform" id="requestform" >
+  <h2>
+    <p>Name:</p>
+    <br>
+    <input class="input" type="text" name="name" id="name" maxlength="50" />
+  </h2>
+  <h2>
+    <p>Email:</p>
+    <br>
+    <input class="input" type="text" name="email" id="email" maxlength="50" />
+  </h2>
+  <h2>
+    <p>Phone Number:</p>
+    <br>
+    <input class="input" type="text" name="phone" id="phone" maxlength="50" />
+  </h2>
+  <h2>
+    <p>Comments:</p>
+    <br>
+    <textarea class="input" type="text" name="comments" id="comments" maxlength="500" rows="12"></textarea>
+  </h2>
+
+  <input type="submit" value="Submit contact information" />
+  </form>
+</div>
 </div>
 
 
