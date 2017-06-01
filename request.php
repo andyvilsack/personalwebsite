@@ -1,6 +1,5 @@
 <?php 
 $to = "andrew.vilsack@gmail.com";
-$subject = "[Website email from] ".$_POST['name'];
 $message = '<html><body><h2>Website submission</h2><p>'.
     '<p><b>Name: </b>'.$_POST['name'].'</p>'.
     '<p><b>Email: </b>'.$_POST['email'].'</p>'.
@@ -11,24 +10,12 @@ $message = '<html><body><h2>Website submission</h2><p>'.
   $headers = 'From: '.$_POST['email']."\r\n".
              'Reply-To: '.$_POST['email']."\r\n".
              'Content-type: text/html; charset=iso-8859-1;'."\r\n".
-			 'MIME-Version: 1.0' . "\r\n".
              'X-Mailer: PHP/'.phpversion();
 
   #mail($to,$subject, $message, $headers)           
 
-  if(mail($to,$subject, $message, $headers)   )
-  {
-  	echo "success!";
-  } 
-  else
-  {
-  	echo phpinfo();
-  }
-  #echo $istrue;
-  #echo $to;
-  #echo $subject;
-  #echo $message;
-  #echo $headers;
+mail($to,'Website Email',$message,$headers);
+  
  ?>
 
 
