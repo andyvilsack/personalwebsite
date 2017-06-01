@@ -14,7 +14,14 @@ $message = '<html><body><h2>Website submission</h2><p>'.
 
   #mail($to,$subject, $message, $headers)           
 
-mail($to,'Website Email',$message,$headers);
+if(mail($to,'Website Email',$message,$headers, "-andrew.vilsack@gmail.com"))
+{
+
+}
+else
+{
+	echo "fail";
+}
   
  ?>
 
